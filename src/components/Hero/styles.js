@@ -37,6 +37,13 @@ export const HeroContent = styled(BaseContainer)`
       border-color: ${(props) => props.theme.white};
     }
   }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -48,6 +55,15 @@ export const TextContainer = styled.div`
   h1 {
     font-size: 60px;
     line-height: 90%;
+
+    @media (max-width: 500px) {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    max-width: 607px;
+    text-align: center;
   }
 `;
 
@@ -59,6 +75,11 @@ export const FeaturedContainer = styled.div`
   max-width: 607px;
   height: 550px;
   gap: 5px;
+
+  @media (max-width: 500px) {
+    height: 400px;
+    grid-auto-rows: 170px;
+  }
 `;
 
 export const FeaturedItem = styled.div`
@@ -113,6 +134,16 @@ export const FeaturedItem = styled.div`
 
     img {
       transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 500px) {
+    div {
+      padding: 5px;
+    }
+
+    h2 {
+      display: none;
     }
   }
 `;

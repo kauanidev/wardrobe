@@ -4,13 +4,20 @@ import { BaseContainer } from "../../styles/global";
 export const ProductsListContainer = styled(BaseContainer)`
   h3 {
     font-size: 45px;
-    margin-bottom: 30px;
   }
 
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+      h3 {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   > div {
@@ -22,7 +29,13 @@ export const ProductsListContainer = styled(BaseContainer)`
 
 export const CategoriesContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+
+  @media (max-width: 500px) {
+    align-items: center;
+    justify-content: center;
+  }
 
   a {
     background: ${(props) => props.theme.primaryLighter};

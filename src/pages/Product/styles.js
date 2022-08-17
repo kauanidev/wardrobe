@@ -11,6 +11,10 @@ export const ProductContainer = styled(BaseContainer)`
   > a {
     margin-top: 50px;
     margin-bottom: 100px;
+
+    @media (max-width: 1150px) {
+      margin-bottom: 50px;
+    }
   }
 `;
 
@@ -79,5 +83,29 @@ export const ProductContentContainer = styled.div`
     background: ${(props) => props.theme.white};
     height: 500px;
     border: 15px double ${(props) => props.theme.primary};
+  }
+
+  @media (max-width: 1150px) {
+    gap: 50px;
+
+    div {
+      h1 {
+        font-size: 30px;
+        padding: 15px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    flex-direction: column-reverse;
+
+    img {
+      height: 300px;
+      width: 100%;
+    }
   }
 `;

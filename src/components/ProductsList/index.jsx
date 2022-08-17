@@ -2,7 +2,7 @@ import { Product } from "../Product";
 import { CategoriesContainer, ProductsListContainer } from "./styles";
 import { Link } from "react-router-dom";
 
-export function ProductsList({ products }) {
+export function ProductsList({ products, title }) {
   const categories = [
     "electronics",
     "jewelery",
@@ -12,7 +12,7 @@ export function ProductsList({ products }) {
   return (
     <ProductsListContainer id="products">
       <header>
-        <h3>Featured</h3>
+        <h3>{title}</h3>
 
         <CategoriesContainer>
           {categories.map((category) => {

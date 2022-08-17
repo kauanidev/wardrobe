@@ -23,7 +23,7 @@ export function Category() {
   return (
     <CategoryContainer>
       <CategoryBanner />
-      <ProductsList products={products} />
+      <ProductsList title="Products" products={products} />
     </CategoryContainer>
   );
 }

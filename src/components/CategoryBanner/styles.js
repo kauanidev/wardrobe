@@ -31,4 +31,32 @@ export const CategoryBannerContainer = styled.section`
     font-size: 45px;
     text-transform: uppercase;
   }
+
+  @media (max-width: 620px) {
+    h1 {
+      font-size: 35px;
+    }
+
+    button {
+      margin-right: 20px;
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    button {
+      margin-right: 15px;
+      font-size: 20px;
+    }
+
+    div {
+      padding: 10px 15px;
+    }
+  }
 `;

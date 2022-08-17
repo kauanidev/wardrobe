@@ -27,7 +27,7 @@ export function Home() {
   return (
     <HomeContainer>
       <Hero highlights={highlights} />
-      <ProductsList products={featured} />
+      <ProductsList title="Featured" products={featured} />
     </HomeContainer>
   );
 }
